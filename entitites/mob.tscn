@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://vsqp8vty1xvl"]
+
+[ext_resource type="Script" path="res://code/mob.gd" id="1_2aq6a"]
+
+[node name="Mob" type="RigidBody2D"]
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_2aq6a")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
