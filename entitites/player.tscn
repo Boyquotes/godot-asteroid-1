@@ -1,14 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://ddrgj7dq6wany"]
 
-[ext_resource type="Script" path="res://code/Player.gd" id="1_2ex0i"]
+[ext_resource type="Script" path="res://code/player.gd" id="1_lqgob"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e5phq"]
 
 [node name="Player" type="Area2D"]
-script = ExtResource("1_2ex0i")
+script = ExtResource("1_lqgob")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_e5phq")
+one_way_collision_margin = 0.0
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 8
